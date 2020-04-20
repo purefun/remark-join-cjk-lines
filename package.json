@@ -1,0 +1,17 @@
+{
+  "name": "remark-join-cjk-lines",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "unist-util-visit": "^2.0.2"
+  },
+  "scripts": {
+    "test": "jest",
+    "coverage": "jest --coverage"
+  },
+  "devDependencies": {
+    "remark": "^12.0.0",
+    "jest": "^25.4.0"
+  }
+}
