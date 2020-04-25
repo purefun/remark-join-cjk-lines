@@ -76,6 +76,8 @@
   };
   ```
 
+  Docusaurus's remarkPlugins take effect in build mode only.
+
 ## License
 
 [MIT licensed](./LICENSE)
