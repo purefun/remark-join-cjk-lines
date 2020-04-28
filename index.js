@@ -24,12 +24,12 @@ const range = str => str.split('-').map(c => `\\u${c}`).join('-');
 
 const CJK = cjk_ranges.map(range).join('');
 
-const regex = new RegExp(`([${CJK}])\\n([${CJK}])`, 'gm');
+const regex = new RegExp(`([${CJK}])([\\s\\n]+)([${CJK}])`, 'gm');
 
 function joinCKJLines(tree) {
   visit(tree, 'text', node => {
     if (node.type === 'text') {
-      node.value = node.value.replace(regex, '$1$2');
+      node.value = node.value.replace(regex, '$1$3');
     }
   })
 }
