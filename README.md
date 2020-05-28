@@ -78,6 +78,8 @@
 
   Docusaurus's remarkPlugins take effect in build mode only.
 
+> NOTE: Run `gatsby clean` to take effect.
+
 ## License
 
 [MIT licensed](./LICENSE)
