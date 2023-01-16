@@ -30,7 +30,13 @@ describe('remark-join-cjk-lines', () => {
     expect(output).toBe('汉字换，行');
   });
 
-  it('should keep the space between non-cjk charactors', () => {
+  it('should keep non-linebreak space between cjk characters', () => {
+    const input = ['汉字 换', '   行'].join('\n');
+    const output = process(input);
+    expect(output).toBe('汉字 换行');
+  });
+
+  it('should keep the space between non-cjk characters', () => {
     const input = ['non-cjk', '行'].join('\n');
     const output = process(input);
     expect(output).toBe('non-cjk\n行');
