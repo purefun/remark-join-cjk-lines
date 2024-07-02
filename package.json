@@ -1,7 +1,7 @@
 {
   "name": "remark-join-cjk-lines",
   "description": "A remark plugin to remove extra space between CJK Characters",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "main": "index.js",
   "license": "MIT",
   "repository": {
@@ -22,5 +22,9 @@
   "resolutions": {
     "node-notifier": "^8.0.1",
     "ansi-regex": "^5.0.1"
-  }
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "engineStrict": true
 }
